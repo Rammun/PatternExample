@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c7e9555f-d8a2-4f34-9552-b74d602411c1" name="Singlton" linkedPackageId="8b23e8a6-4c5b-43a2-b2f4-dd566eedadcf" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="238a2be4-8c6b-4343-8455-619d02071fb0">
+      <profileInstance Id="731c7da2-637d-46d2-86b7-38fdb26cd128" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d58a467c-7ffe-4560-9a0a-df0e9908ebbc">
+      <profileInstance Id="3fb6b24c-b0df-4a71-9ef7-35ec3ba7de2e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02a7e1c6-2380-4a0e-b295-cf94975ddd9a" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="894a8a8f-9c5d-49d5-bc12-5257266d5544" name="Class2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="578120be-d2dd-4d47-bed0-abdd455232a4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ba950b0e-c15e-4c8d-b586-10e67b6db2f6" name="Class3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="59e890c9-985e-429f-bef8-8103b57980ad" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="8b23e8a6-4c5b-43a2-b2f4-dd566eedadcf" name="Pattern.UML">
+    <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />
+  </package>
+</logicalClassDesignerModel>

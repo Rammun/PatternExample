@@ -256,6 +256,113 @@
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="578120be-d2dd-4d47-bed0-abdd455232a4"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="59e890c9-985e-429f-bef8-8103b57980ad"
+        name="Class3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5205dba2-b79e-4f5a-8a86-3a9698f0d06c"
+        name="Factory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="50c0ac84-37d6-4258-8c1b-bb01df2f33a6">
+            <classMoniker
+              Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77"
+              LastKnownName="Figure"
+              LastKnownLocation="Pattern.UML.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77"
+        name="Figure"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a62ecac3-e473-4753-b6fd-dbc6a3b3a3da"
+        name="Square"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2d54d698-d391-4e56-996e-f40a35c2e6e6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77"
+              LastKnownName="Figure"
+              LastKnownLocation="Pattern.UML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a466d89e-02a9-4d0a-b9bb-c7459a36726b"
+        name="Circle"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="cb362c30-d8d3-4b0e-ad22-098cff3ad437"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77"
+              LastKnownName="Figure"
+              LastKnownLocation="Pattern.UML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e0244fee-d710-43ca-bbb2-e120efdb600a"
+        name="Triangle"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a9cd5948-f210-44cf-97db-29cff0bf1b76"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77"
+              LastKnownName="Figure"
+              LastKnownLocation="Pattern.UML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

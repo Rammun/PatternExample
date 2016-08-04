@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="81cc4a48-4047-4c7a-a65a-538ec5f43132" name="Strategy" linkedPackageId="c18a7d85-522c-4dc6-b8c3-0cf5f1f8ef0d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="df9914e3-6300-4a2b-ad47-a3527d11a7c1">
+      <profileInstance Id="4ae7cde5-c564-46b6-a049-e28377f9bb25" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="00b1dd6f-d781-45c0-bf93-2b859f59ecf3">
+      <profileInstance Id="749ca9b3-74f3-430d-a014-85e491af3349" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="38731b59-1a8d-44a8-846e-10a647c6ed17" name="Operation" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e266cd50-46e0-467d-8426-63700614baa5" />
+        <ownedOperationsInternal>
+          <operation Id="48a3429d-393d-46d3-8328-4ba96b62ba36" name="Do" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="081eea5e-4c77-4fd6-a918-61a743358c1d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a2870ab-55c6-4aef-9916-f030667c4638" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="da83cf55-f7fd-4e1e-9366-562c50edbc8d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e5192ef-497d-44ed-ba9f-b0ec55e996bb" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="57f31f0c-05b9-467e-8fcd-ee3b4e430dde" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f945d0eb-b533-4fc4-9efa-f4a4d11d6b24" name="Summ" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5ff13214-4e38-4436-87a3-62f804431368" />
+        <generalsInternal>
+          <generalization Id="d44e035f-b8ec-4b72-b8d4-46dbd2593209" isSubstitutable="false">
+            <classMoniker Id="38731b59-1a8d-44a8-846e-10a647c6ed17" LastKnownName="Operation" />
+            <elementDefinition Id="ec382c64-8882-4707-92bf-a23f75d454ac" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="143119da-b731-41bd-a302-86192cde5d51" name="Do" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6b452a9f-8e7f-4fac-8e1e-10a9add34c4c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f16636c5-4b20-4b06-ba7a-f21cf25dc337" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="5eb3135b-a1d8-46a5-bd82-ddd7b87b99da" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="411b74bb-5e04-475c-8cf3-2776acf2c06e" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="4aa9199f-a1bb-46f7-be08-0d697a1970f0" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1b5b2c7-6e59-4d52-8170-36b94b43ae15" name="Subtraction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6c54d790-6926-4f9a-9800-c95bcb060755" />
+        <generalsInternal>
+          <generalization Id="3b4cf893-4589-411a-87f1-c5545e1d6e90" isSubstitutable="false">
+            <classMoniker Id="38731b59-1a8d-44a8-846e-10a647c6ed17" LastKnownName="Operation" />
+            <elementDefinition Id="b1830d7f-e4c8-426b-b7c5-17e3b734559a" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="64b34d3e-d03e-4259-8c1e-5fd9f593a317" name="Do" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e2f4e21a-b739-4099-9f8d-63400ce2973a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="44d0971e-06de-4dea-bdec-f55fcfb5691f" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="b552c370-48f0-4641-9b32-25a6baff2533" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="43ce0540-cc42-4e59-92a4-bfa33da145b6" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="c90c2d86-bf7c-463b-ab2b-7fe6bf279c62" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="90241282-f408-4cd5-989b-70c09a9bfc0a" name="Multiplication" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e2496cec-39b5-4751-bd69-67410d1434bc" />
+        <generalsInternal>
+          <generalization Id="a13834a6-8ff3-4e6a-978b-7629d69301ed" isSubstitutable="false">
+            <classMoniker Id="38731b59-1a8d-44a8-846e-10a647c6ed17" LastKnownName="Operation" />
+            <elementDefinition Id="207beb38-0ff4-48f5-afd9-38f798d552e9" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="825b88fb-1c8d-4e7f-a84f-d144d134d609" name="Do" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a0dbcc34-c401-4451-a7ba-c2dd9ed24b7f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="33cf6ef4-945e-4ee3-9051-aaf8e16f3f4e" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="bb33afa7-b461-40b3-ad9c-606f786f0b41" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="402bb409-bbb1-448d-bf9b-a3841b6e7f74" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="cd516a75-976e-4ad5-b31a-919865c8befe" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4cf246f9-8a3e-413d-ae6a-f64a12bbfb3d" name="Division" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4e5a4a58-ef82-46f2-b6fa-b164416697e8" />
+        <generalsInternal>
+          <generalization Id="705875d4-eb66-43cb-afe2-697f2120f38b" isSubstitutable="false">
+            <classMoniker Id="38731b59-1a8d-44a8-846e-10a647c6ed17" LastKnownName="Operation" />
+            <elementDefinition Id="aacc93b4-2d5b-4039-8d4c-2aef0b6c8004" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="2df1be61-76b9-4fe8-9dae-e01a75ede407" name="Do" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="936f00c1-a891-4859-a342-969b54fe759a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="affaeee9-ea6e-4e0e-bf28-f1e0eb53c7d3" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="46ebf916-d330-4429-9276-01112a4f8e60" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1cb1ae9f-0186-4f93-85b1-95c5b9e1b3e5" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="406e8717-82b4-43c9-8c4e-e2e61048c668" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0af47491-9399-44c7-b019-c90f29b601dd" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6476bd09-8326-4ccf-972c-0b9d8d5f858a" />
+        <suppliersInternal>
+          <dependency Id="2681b453-ece6-4042-9ede-4dcfa29128ed">
+            <classMoniker Id="38731b59-1a8d-44a8-846e-10a647c6ed17" LastKnownName="Operation" />
+            <elementDefinition Id="801c9d34-a4a9-4c21-a4ef-30d77314204e" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c18a7d85-522c-4dc6-b8c3-0cf5f1f8ef0d" name="Pattern.UML">
+    <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />
+  </package>
+</logicalClassDesignerModel>

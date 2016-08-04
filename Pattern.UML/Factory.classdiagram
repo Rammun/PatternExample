@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dfabe8a3-dce2-4735-bf22-203542d228e8" name="Factory" linkedPackageId="26d321e9-5d4a-4bab-a74b-af04adc27323" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="06ef8dc8-681e-4f34-b471-20b65e10225f">
+      <profileInstance Id="8e897f0a-5ab1-498d-b305-4b3cd26a0f18" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6a796596-9d66-402f-a13d-b5d8e6bf4abd">
+      <profileInstance Id="fd3a487e-f67d-42e8-b17e-916456ef26ef" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" name="Factory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5205dba2-b79e-4f5a-8a86-3a9698f0d06c" />
+        <suppliersInternal>
+          <dependency Id="e117efe0-6a43-4ed9-8760-4306caa1bd9b">
+            <classMoniker Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" LastKnownName="Figure" />
+            <elementDefinition Id="50c0ac84-37d6-4258-8c1b-bb01df2f33a6" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" name="Figure" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5c101bcd-b726-4e2e-99fc-c407821e299a" name="Square" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a62ecac3-e473-4753-b6fd-dbc6a3b3a3da" />
+        <generalsInternal>
+          <generalization Id="52933f74-04f7-4b5b-a1c9-0128c1bcf733" isSubstitutable="false">
+            <classMoniker Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" LastKnownName="Figure" />
+            <elementDefinition Id="2d54d698-d391-4e56-996e-f40a35c2e6e6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2ecc5fa2-648c-499f-9648-bf35bd4e2a32" name="Circle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a466d89e-02a9-4d0a-b9bb-c7459a36726b" />
+        <generalsInternal>
+          <generalization Id="a3a027c0-4c35-48b6-afaa-6f2f50a49486" isSubstitutable="false">
+            <classMoniker Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" LastKnownName="Figure" />
+            <elementDefinition Id="cb362c30-d8d3-4b0e-ad22-098cff3ad437" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="da41b6c1-ed99-4550-95fc-b0c343168962" name="Triangle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0244fee-d710-43ca-bbb2-e120efdb600a" />
+        <generalsInternal>
+          <generalization Id="be6feb3b-a2fe-48fc-a309-66ca0272c0ee" isSubstitutable="false">
+            <classMoniker Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" LastKnownName="Figure" />
+            <elementDefinition Id="a9cd5948-f210-44cf-97db-29cff0bf1b76" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="26d321e9-5d4a-4bab-a74b-af04adc27323" name="Pattern.UML">
+    <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />
+  </package>
+</logicalClassDesignerModel>

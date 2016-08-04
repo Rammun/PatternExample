@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dfabe8a3-dce2-4735-bf22-203542d228e8" name="Factory" linkedPackageId="26d321e9-5d4a-4bab-a74b-af04adc27323" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6bc0325f-60a0-43a2-a118-290cbbbddcf4">
+      <elementDefinition Id="f54f23d1-da7f-46fc-953a-cddbaf4653a2" />
+      <body>return new Sqware()</body>
+    </comment>
+    <comment Id="19694166-c8b7-449c-8236-8584565de382">
+      <elementDefinition Id="4507da25-ba26-4ef7-99de-d54bcea4f052" />
+      <body>return new Circle()</body>
+    </comment>
+    <comment Id="100ff3e6-3390-471e-9414-af53516535d3">
+      <elementDefinition Id="0885e3de-281c-4964-bca1-70cdbaf8b526" />
+      <body>return new Triangle()</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances Id="06ef8dc8-681e-4f34-b471-20b65e10225f">
       <profileInstance Id="8e897f0a-5ab1-498d-b305-4b3cd26a0f18" name="StandardProfileL2">
@@ -16,19 +30,33 @@
   </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" name="Factory" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" name="Factory" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5205dba2-b79e-4f5a-8a86-3a9698f0d06c" />
-        <suppliersInternal>
-          <dependency Id="e117efe0-6a43-4ed9-8760-4306caa1bd9b">
-            <classMoniker Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" LastKnownName="Figure" />
-            <elementDefinition Id="50c0ac84-37d6-4258-8c1b-bb01df2f33a6" />
-          </dependency>
-        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="64e9de08-52eb-45c8-ba3c-787a6f4b3689" name="Create" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="439e2643-6ef5-423f-aa3c-bf8b655fbe0c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bf226df8-5b0e-43c4-8ece-123b9e75e925" direction="Return" isUnique="false">
+                  <elementDefinition Id="b4b67035-41cd-4084-bfee-f7b195d235e8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="656f2df5-8fef-4a36-8da7-d2ae05489932" LastKnownName="Figure" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" name="Figure" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="93d273a3-e2f5-48eb-beda-a5f7dca537a1" name="Figure" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77" />
+        <ownedOperationsInternal>
+          <operation Id="bd6b6452-289f-4ad7-80f4-5006d41b4537" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f2b422a-7a73-4f60-bbcc-e767404c4668" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -40,6 +68,11 @@
             <elementDefinition Id="2d54d698-d391-4e56-996e-f40a35c2e6e6" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="6b47371f-4cf4-4af6-9d73-212572cb6717" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1aa1b670-09a3-4257-b592-db2c483aa4e4" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -51,6 +84,11 @@
             <elementDefinition Id="cb362c30-d8d3-4b0e-ad22-098cff3ad437" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="54f2e85c-8701-4d84-9e23-cb8daf8e5769" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="44391225-6e92-41bf-adc3-3a9b2692af73" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -62,6 +100,127 @@
             <elementDefinition Id="a9cd5948-f210-44cf-97db-29cff0bf1b76" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="d333499c-daed-481e-a312-8d20e0d009ed" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84310196-17f1-4ce4-a67a-3d25970493d0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="656f2df5-8fef-4a36-8da7-d2ae05489932" name="Figure" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::Figure">
+        <elementDefinition Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="546f2068-aba1-40eb-b6e8-476d8155e708" name="Figure" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::Figure">
+        <elementDefinition Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c98549c5-5fad-4e1b-bee6-ca3aa822b0df" name="FactoryCircle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2aaff993-c43a-4f23-844e-148b63a98210" />
+        <suppliersInternal>
+          <dependency Id="0d165e79-27bf-45cc-9a08-69fc9c8c2c58">
+            <classMoniker Id="2ecc5fa2-648c-499f-9648-bf35bd4e2a32" LastKnownName="Circle" />
+            <elementDefinition Id="dc52868e-83eb-47db-9604-ae2d18d4cf95" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="bc1d3efe-2176-4e80-b702-b1f37fd39d0a" isSubstitutable="false">
+            <classMoniker Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" LastKnownName="Factory" />
+            <elementDefinition Id="0ab7d698-158d-4d8f-ad0e-a3cd050535b7" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="fdbecb9a-c750-410f-8dcb-70de548f624f" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="866b0017-1233-448c-b310-5db0af466b72" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f150cf37-835a-4d59-9e1c-92a95e6dafc6" direction="Return" isUnique="false">
+                  <elementDefinition Id="1b15fa65-deef-45d6-b9a3-492c96815a6a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="546f2068-aba1-40eb-b6e8-476d8155e708" LastKnownName="Figure" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a8807340-ba5a-4faa-a5b0-8f66b6d44910" name="Figure" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::Figure">
+        <elementDefinition Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4c8177d7-7332-42e0-b876-79235d5d64da" name="FactorySquare" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5fe6645c-5428-4571-a7ee-7036eb3c13dc" />
+        <suppliersInternal>
+          <dependency Id="0119b132-e121-4b6f-8bc8-ef155791767a">
+            <classMoniker Id="5c101bcd-b726-4e2e-99fc-c407821e299a" LastKnownName="Square" />
+            <elementDefinition Id="18b7254d-b169-4ba6-9071-1610c500f647" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="7385a8ce-7c84-40d5-8105-0f2e241b1f51" isSubstitutable="false">
+            <classMoniker Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" LastKnownName="Factory" />
+            <elementDefinition Id="75d644a2-4a56-4f34-8c48-3772097e5d4c" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="d6dd6008-2984-4615-8e1d-21247fb84f7c" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7138a59f-b9eb-4408-aa18-e7892d5ffa9e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9833effe-a979-4c01-8135-5e24a4ed0cc1" direction="Return" isUnique="false">
+                  <elementDefinition Id="2dc5a058-ebae-449a-b3ef-26db3bc32b9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a8807340-ba5a-4faa-a5b0-8f66b6d44910" LastKnownName="Figure" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ba8e3c71-c92f-4899-8641-ad9daeba7c0f" name="Figure" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::Figure">
+        <elementDefinition Id="5f50e1e4-f39f-414b-bd53-b5cf6f22ba77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39d99920-6b8f-4d43-a6e5-142d6c7cec74" name="FactoryTriangle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39dfc0f0-1e95-4ddf-8276-1ef4e3070a81" />
+        <suppliersInternal>
+          <dependency Id="720d4a39-0124-421d-bca6-c28cb5422768">
+            <classMoniker Id="da41b6c1-ed99-4550-95fc-b0c343168962" LastKnownName="Triangle" />
+            <elementDefinition Id="1bc4b9fa-47b5-4b27-8247-e7a589df645a" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="79fd59d5-f412-443d-b2f6-d3cf738b58f3" isSubstitutable="false">
+            <classMoniker Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" LastKnownName="Factory" />
+            <elementDefinition Id="f91ba78a-c459-472f-a939-b47d0c5dc468" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="38e2ba39-557e-4a60-a3f7-b412b7f5e959" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="748d5054-bcd6-4e70-8b50-3eafca888b93" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d3916fc6-9232-4e8e-b122-88c60ff03d99" direction="Return" isUnique="false">
+                  <elementDefinition Id="0b04e504-d88b-47b4-ab32-95f5dab89235" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ba8e3c71-c92f-4899-8641-ad9daeba7c0f" LastKnownName="Figure" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

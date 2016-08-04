@@ -2,11 +2,11 @@
 <logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Singlton">
   <logicalClassDesignerModelMoniker Id="c7e9555f-d8a2-4f34-9552-b74d602411c1" />
   <nestedChildShapes>
-    <classShape Id="04fa408e-3bb0-4bcd-98c8-dae8fb9692d0" absoluteBounds="3.125, 0.625, 2.125, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="04fa408e-3bb0-4bcd-98c8-dae8fb9692d0" absoluteBounds="3.375, 1, 2.375, 1.3828124701976776" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="02a7e1c6-2380-4a0e-b295-cf94975ddd9a" LastKnownName="Singlton" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="54751604-4069-4e6f-a483-883651438236" absoluteBounds="3.14, 1.0150000000000001, 2.0949999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="f622f19e-de6a-423a-bfae-67c86eb7908d" absoluteBounds="3.14, 1.3863281125823657, 2.0949999999999998, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="54751604-4069-4e6f-a483-883651438236" absoluteBounds="3.39, 1.3900000000000001, 2.3449999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f622f19e-de6a-423a-bfae-67c86eb7908d" absoluteBounds="3.39, 1.7613281125823657, 2.3449999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

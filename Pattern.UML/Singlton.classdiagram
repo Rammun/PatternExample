@@ -16,20 +16,28 @@
   </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="02a7e1c6-2380-4a0e-b295-cf94975ddd9a" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="02a7e1c6-2380-4a0e-b295-cf94975ddd9a" name="Singlton" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b" />
+        <ownedAttributesInternal>
+          <property Id="0f0617f2-71e0-4118-97f6-d71ed2a276c5" name="Sington" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ae23e9b-5998-4017-8360-ddae1024a96f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c689f680-f11d-4359-a77c-7350478ad49c" LastKnownName="instanse" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a7bc00a-a2de-4061-9ef9-a01a28f414f8" name="Singlton : GetInstanse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e6214c71-f8e6-4485-ba0b-6bf7a43b3d23" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="894a8a8f-9c5d-49d5-bc12-5257266d5544" name="Class2" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="578120be-d2dd-4d47-bed0-abdd455232a4" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="ba950b0e-c15e-4c8d-b586-10e67b6db2f6" name="Class3" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="59e890c9-985e-429f-bef8-8103b57980ad" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c689f680-f11d-4359-a77c-7350478ad49c" name="instanse" isAbstract="false" isLeaf="false" cachedFullName="instanse">
+        <elementDefinition Id="88b5fd37-52f3-4a21-aa56-83a1ec3afe70" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="8b23e8a6-4c5b-43a2-b2f4-dd566eedadcf" name="Pattern.UML">
     <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />

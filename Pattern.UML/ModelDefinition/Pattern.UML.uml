@@ -259,18 +259,42 @@
     <packageHasNamedElement>
       <class
         Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b"
-        name="Class1"
+        name="Singlton"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="578120be-d2dd-4d47-bed0-abdd455232a4"
-        name="Class2"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="3ae23e9b-5998-4017-8360-ddae1024a96f"
+            name="Sington"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="88b5fd37-52f3-4a21-aa56-83a1ec3afe70"
+                LastKnownName="instanse"
+                LastKnownLocation="Pattern.UML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e6214c71-f8e6-4485-ba0b-6bf7a43b3d23"
+            name="Singlton : GetInstanse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -362,6 +386,24 @@
           </generalization>
         </generalsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d0fd1a5b-7a85-497e-808d-d2b152bb3384"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="328acfcd-8efa-40c2-b7d2-232c4d2f10ea"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1953.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="88b5fd37-52f3-4a21-aa56-83a1ec3afe70"
+        name="instanse" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

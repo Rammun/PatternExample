@@ -1,1 +1,328 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="da285aac-1c87-4573-aba1-3e02f197d85f" name="AbstructFactory" linkedPackageId="2d42f6ee-1f37-41b1-b0f7-d82b371a29df" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="7c62f7c4-ffb3-4c05-a445-2a4dd131f04c">
+      <elementDefinition Id="35bd0cd9-5629-4e67-a6ad-1048973908b2" />
+      <body>Draw()
+{
+  leftPicture.Draw()
+  rightPicture.Draw()
+}</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="9cb2da29-01c0-4ea5-a266-31890a445fe6">
+      <profileInstance Id="95291aba-f0b7-4aff-b57b-a6c2b915ec12" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="499f8d9c-3513-4163-af9d-a783507b804b">
+      <profileInstance Id="224b1142-5850-4e0c-9bc9-80598d1dbdc5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="04a98c6d-53e5-45db-8ce0-e5c876eabf58" name="Sprite" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d638ab01-df74-4b62-b7b1-13633d6473c9" />
+        <suppliersInternal>
+          <dependency Id="fbc9384b-c88b-4961-bde2-295aaca672f6">
+            <classMoniker Id="86adfe91-a24d-47ff-828a-4e78471c6a4a" LastKnownName="SpriteFactory" />
+            <elementDefinition Id="64f01c37-8c90-4737-b0f9-a6e195c89db6" />
+          </dependency>
+          <dependency Id="446c366b-1d25-44de-b742-96de0e1e7264">
+            <classMoniker Id="b4f47ee5-2510-4d7e-903f-bddea4c4f828" LastKnownName="RightPicture" />
+            <elementDefinition Id="4fa2f9e8-ac5c-441c-8e5d-7694cd05964d" />
+          </dependency>
+          <dependency Id="e19b906a-bd83-4110-b5bf-aaa7463151ae">
+            <classMoniker Id="767eeba8-3f84-4503-a73a-dc93451a1e35" LastKnownName="LeftPicture" />
+            <elementDefinition Id="e36ba012-c536-431e-b564-7816c893e78e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="9a72d4cc-8b27-472a-bdb0-4bb1d3ab6ed8" name="leftPicture" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15650962-d614-4cd5-8352-bad6b127b9b2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="afc4a10c-732d-4826-938c-535ff9c8218c" LastKnownName="LeftPicture" />
+            </type_NamedElement>
+          </property>
+          <property Id="8875cb93-f6c4-4506-a194-b74ca1fe4141" name="rightPicture" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fcc57fce-da6e-4764-8830-df450cd2ca45" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e23d8016-0f69-40c0-a649-e2c60b286f4f" LastKnownName="RightPicture" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0599358c-15e6-4a7a-900e-3ba1e5669f42" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3ac63971-2019-4fc8-8f4f-fe4b67d7c539" />
+          </operation>
+          <operation Id="de46bf47-6fe9-4254-9710-f3759d9d60ec" name="Sprite" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="342356d1-9d24-400c-8386-7c8f371ec3ed" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="425e5a98-0c15-43a5-9156-da6e0925abf8" name="factory" direction="In" isUnique="false">
+                  <elementDefinition Id="69ce79ae-f78b-447d-87ed-1bb016aac099" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9de6e807-d7cf-464e-9be2-d927e89c77bb" LastKnownName="SpritetFactory" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="86adfe91-a24d-47ff-828a-4e78471c6a4a" name="SpriteFactory" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ab23e1d1-92ff-40a1-95da-0e16f30683f4" />
+        <ownedOperationsInternal>
+          <operation Id="0e26fe68-619d-4cb7-82b5-ace242834794" name="CreateLeft" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2235092a-11b2-481e-b467-4bc3ce8813f4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="70ac06f1-ae4c-4950-93c0-d9bd78680487" direction="Return" isUnique="false">
+                  <elementDefinition Id="49bcce20-dc26-4c49-9066-c41e45c4d9c1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f42721fd-12ad-4717-8863-88e7901d2b05" LastKnownName="LeftPicture" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d43c6ceb-bed8-405b-b78f-35c4acacfa71" name="CreateRight" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f60dbf18-9db0-40d8-b7f8-7813f2463c10" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="995905f0-e183-46f2-949f-0a2d5b17e7be" direction="Return" isUnique="false">
+                  <elementDefinition Id="81281945-0f49-43fd-b30d-af5c9062643f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d80cb9f8-af8b-4e4a-aa6a-9bc2f65119bf" LastKnownName="RightPicture" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="63ba8da4-d870-4805-b7fa-2834324b921a" name="Sprite3DFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="617294bc-51c5-457d-8123-b994848357c4" />
+        <suppliersInternal>
+          <dependency Id="8f498351-616b-4bdd-ac2e-da556f0eb24b">
+            <classMoniker Id="7f1737b7-a41e-4a72-8e39-8b1e3e18bc76" LastKnownName="Right3D" />
+            <elementDefinition Id="d1a312f0-4d2c-49cb-bac3-ee012cf69b69" />
+          </dependency>
+          <dependency Id="92ec2a6a-b02c-4d65-ab17-b488363e4475">
+            <classMoniker Id="81d0f791-c843-48e3-9727-053a091b461a" LastKnownName="Left3D" />
+            <elementDefinition Id="6131b1e4-c71a-4f80-bed0-f86d99509621" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="24f3604c-7fdb-4faf-991e-d8ba5f83d098" isSubstitutable="false">
+            <classMoniker Id="86adfe91-a24d-47ff-828a-4e78471c6a4a" LastKnownName="SpriteFactory" />
+            <elementDefinition Id="d7f5ef3e-865b-4b86-aadb-64fc8358aacd" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="4ebb6882-485f-4413-948e-789b8dbf516b" name="CreateLeft" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="621ab5d3-c9c8-4050-809c-2e882cdb7528" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bc6fe038-a7bb-4302-b94a-6c9ffa522c22" direction="Return" isUnique="false">
+                  <elementDefinition Id="0ba1c544-4090-4201-9e0e-7345c68af14b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="43846af1-6847-4313-ab22-41418bfcb854" LastKnownName="LeftPictuer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2aad9c0d-f83c-454b-a327-8c6a2bdb6236" name="CreateRight" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1a052218-4a8a-4f66-96d0-28342bbe8ef0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7dc52aa-8330-4dff-ab1b-d9bc4d6287b5" direction="Return" isUnique="false">
+                  <elementDefinition Id="ffb0e27d-6c87-4d8f-97a7-db71141b41d8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d80cb9f8-af8b-4e4a-aa6a-9bc2f65119bf" LastKnownName="RightPicture" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f42721fd-12ad-4717-8863-88e7901d2b05" name="LeftPicture" isAbstract="false" isLeaf="false" cachedFullName="LeftPicture">
+        <elementDefinition Id="0bdf99e0-2115-49a6-814b-ceb548682260" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d80cb9f8-af8b-4e4a-aa6a-9bc2f65119bf" name="RightPicture" isAbstract="false" isLeaf="false" cachedFullName="RightPicture">
+        <elementDefinition Id="717ce893-1d8d-49f2-812c-4957082901b3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cacd0eb1-2842-47a4-8316-4dac045113aa" name="Sprite2DFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9311ec62-3f71-4103-a6fb-8f75f998a808" />
+        <suppliersInternal>
+          <dependency Id="1ad3fbd1-ebf6-400f-9544-4c44ecac96c7">
+            <classMoniker Id="54a5a68f-6d28-43f2-a017-6b4ab9fa74ef" LastKnownName="Left2D" />
+            <elementDefinition Id="a7e631ab-699e-4a03-bfab-5816d1623a97" />
+          </dependency>
+          <dependency Id="866ea110-1aa1-4a09-8170-4103ce74051f">
+            <classMoniker Id="daf68cf9-486b-4ca1-91d0-08c7bb4c83ea" LastKnownName="Right2D" />
+            <elementDefinition Id="846c0ac9-b34a-4cf3-a659-6d64fec3b708" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="70aadb59-40e7-43a0-bc5e-e8b1dac9b9ff" isSubstitutable="false">
+            <classMoniker Id="86adfe91-a24d-47ff-828a-4e78471c6a4a" LastKnownName="SpriteFactory" />
+            <elementDefinition Id="5197226f-1c15-4851-bbe5-eef042fec9db" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="39800f6b-fae1-4a0c-9dce-3f39f73db2d9" name="CreateLeft" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6c65279f-7f91-49f2-b862-a2bba6083490" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="72890e10-3dee-4e26-9ee9-861ed32c907f" direction="Return" isUnique="false">
+                  <elementDefinition Id="68dff828-b911-4b51-a173-405affc0720c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="43846af1-6847-4313-ab22-41418bfcb854" LastKnownName="LeftPictuer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="49bec3fa-befd-4aeb-a414-612f19eafff3" name="CreateRight" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="658e9ad2-a860-440d-ac75-67dc625b662c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e363b7b5-ab3d-4b51-9f93-65e68ae34211" direction="Return" isUnique="false">
+                  <elementDefinition Id="8e46117e-2a28-4a3c-94a1-6e2463af49bc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d80cb9f8-af8b-4e4a-aa6a-9bc2f65119bf" LastKnownName="RightPicture" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="43846af1-6847-4313-ab22-41418bfcb854" name="LeftPictuer" isAbstract="false" isLeaf="false" cachedFullName="LeftPictuer">
+        <elementDefinition Id="c9d5f9ed-bde3-4929-b80c-0af6f8ceaeed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b4f47ee5-2510-4d7e-903f-bddea4c4f828" name="RightPicture" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a2a2338-4594-4669-87ee-d2c2e7add535" />
+        <ownedOperationsInternal>
+          <operation Id="c9649884-5167-4d64-bf88-a5f6e273e054" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e716b11c-f06c-422c-9e42-354b0758cf4e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="767eeba8-3f84-4503-a73a-dc93451a1e35" name="LeftPicture" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2cabab21-e6e7-423e-9961-e871a15900f4" />
+        <ownedOperationsInternal>
+          <operation Id="80ca597a-bd8b-4f88-b227-ec15ae1cdb7a" name="Draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f7fb486-646e-4829-8d92-5c8eac9b234a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54a5a68f-6d28-43f2-a017-6b4ab9fa74ef" name="Left2D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d3546f03-fcb0-4cab-b683-06c525c4b64c" />
+        <generalsInternal>
+          <generalization Id="c743726e-0709-49bb-8ee2-ca2135ca9e45" isSubstitutable="false">
+            <classMoniker Id="767eeba8-3f84-4503-a73a-dc93451a1e35" LastKnownName="LeftPicture" />
+            <elementDefinition Id="1b5534f2-7337-4da0-8eda-b11333cb1142" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b77b4351-7f74-4472-9e4a-27620495ef56" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ec3e372-dbbc-4cf2-86e7-7b825c52d1bd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="daf68cf9-486b-4ca1-91d0-08c7bb4c83ea" name="Right2D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39423019-4087-4f1f-bb9a-7c266e6a6bef" />
+        <generalsInternal>
+          <generalization Id="c139028e-a710-4ac8-9891-a2dfb803eaf9" isSubstitutable="false">
+            <classMoniker Id="b4f47ee5-2510-4d7e-903f-bddea4c4f828" LastKnownName="RightPicture" />
+            <elementDefinition Id="599ddad7-846c-43c9-80a9-faf7d8f8426f" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="3b69351f-6185-440a-82f0-c29b55d6eb94" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aa214c76-c38c-4274-8674-5823e144c494" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="81d0f791-c843-48e3-9727-053a091b461a" name="Left3D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8e73d1af-6e53-4151-89f9-8ec6f163673e" />
+        <generalsInternal>
+          <generalization Id="e85af6f2-11ab-46cf-bcf6-9e8816cc84ae" isSubstitutable="false">
+            <classMoniker Id="767eeba8-3f84-4503-a73a-dc93451a1e35" LastKnownName="LeftPicture" />
+            <elementDefinition Id="5535eaba-f6c2-4cf2-a0c7-26c3969d4140" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b34654fd-d0e9-46c1-8199-ccc669967771" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="82a7cb8d-702f-4130-a2c2-6598adaccc7a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7f1737b7-a41e-4a72-8e39-8b1e3e18bc76" name="Right3D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e173cdec-e0a3-46ba-b3ce-b38d10c593f2" />
+        <generalsInternal>
+          <generalization Id="0232debd-5a25-44b8-b51c-66e3e9a89c94" isSubstitutable="false">
+            <classMoniker Id="b4f47ee5-2510-4d7e-903f-bddea4c4f828" LastKnownName="RightPicture" />
+            <elementDefinition Id="7f1b6ca8-268e-4839-8f18-94643b4ee374" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="e48b2da4-12a5-4224-9ede-3aa75881513a" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a748ca1c-e199-4a65-a304-f8c71db1cb3b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="afc4a10c-732d-4826-938c-535ff9c8218c" name="LeftPicture" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::LeftPicture">
+        <elementDefinition Id="2cabab21-e6e7-423e-9961-e871a15900f4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e23d8016-0f69-40c0-a649-e2c60b286f4f" name="RightPicture" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::RightPicture">
+        <elementDefinition Id="9a2a2338-4594-4669-87ee-d2c2e7add535" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9de6e807-d7cf-464e-9be2-d927e89c77bb" name="SpritetFactory" isAbstract="false" isLeaf="false" cachedFullName="SpritetFactory">
+        <elementDefinition Id="ceea55f3-9389-4cce-8a83-21e1f5a04115" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2d42f6ee-1f37-41b1-b0f7-d82b371a29df" name="Pattern.UML">
+    <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />
+  </package>
+</logicalClassDesignerModel>

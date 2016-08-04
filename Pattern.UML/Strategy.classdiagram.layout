@@ -69,14 +69,14 @@
         <classShapeMoniker Id="690bbcec-f508-4277-81ef-75037f41956d" />
       </nodes>
     </generalizationConnector>
-    <classShape Id="4555ad5f-080e-4b18-a005-5d448f6299db" absoluteBounds="7.625, 1, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="4555ad5f-080e-4b18-a005-5d448f6299db" absoluteBounds="6.75, 1, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="0af47491-9399-44c7-b019-c90f29b601dd" LastKnownName="Program" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="196d2837-a1df-4dc0-9bbe-01492fe6e0b8" absoluteBounds="7.64, 1.3900000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="c0d37630-7946-41f9-a41e-e336d12b1786" absoluteBounds="7.64, 1.6011718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="196d2837-a1df-4dc0-9bbe-01492fe6e0b8" absoluteBounds="6.765, 1.3900000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c0d37630-7946-41f9-a41e-e336d12b1786" absoluteBounds="6.765, 1.6011718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <dependencyConnector edgePoints="[(7.625 : 1.45117186754942); (5.75 : 1.45117186754942)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <dependencyConnector edgePoints="[(6.75 : 1.45117186754942); (5.75 : 1.45117186754942)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <dependencyMoniker Id="2681b453-ece6-4042-9ede-4dcfa29128ed" />
       <relativeChildShapes />
       <nodes>

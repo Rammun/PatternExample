@@ -16,20 +16,46 @@
   </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="02a7e1c6-2380-4a0e-b295-cf94975ddd9a" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="02a7e1c6-2380-4a0e-b295-cf94975ddd9a" name="Singlton" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b" />
+        <ownedAttributesInternal>
+          <property Id="0f0617f2-71e0-4118-97f6-d71ed2a276c5" name="instance" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ae23e9b-5998-4017-8360-ddae1024a96f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8af7353b-8a73-445f-bf2b-42b7b7d73aef" LastKnownName="Singlton" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a7bc00a-a2de-4061-9ef9-a01a28f414f8" name="GetInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e6214c71-f8e6-4485-ba0b-6bf7a43b3d23" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="43f293a2-2027-462d-b712-a6da014f3e62" direction="Return" isUnique="false">
+                  <elementDefinition Id="8c7bbc7d-507a-41b3-be00-c85f46e21323" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dc2025ce-5359-43c6-b743-c2a598370d74" LastKnownName="Singlton" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0b4b4726-a3a9-43fd-8cbe-cad2f5768332" name="Singlton" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8994a59-d3f3-451e-b5ec-90b5e006fa65" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="894a8a8f-9c5d-49d5-bc12-5257266d5544" name="Class2" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="578120be-d2dd-4d47-bed0-abdd455232a4" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="ba950b0e-c15e-4c8d-b586-10e67b6db2f6" name="Class3" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="59e890c9-985e-429f-bef8-8103b57980ad" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dc2025ce-5359-43c6-b743-c2a598370d74" name="Singlton" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::Singlton">
+        <elementDefinition Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8af7353b-8a73-445f-bf2b-42b7b7d73aef" name="Singlton" isAbstract="false" isLeaf="false" cachedFullName="Pattern.UML::Singlton">
+        <elementDefinition Id="a4d44ee1-3cdb-4c71-9ba9-293f5475ba0b" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="8b23e8a6-4c5b-43a2-b2f4-dd566eedadcf" name="Pattern.UML">
     <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />

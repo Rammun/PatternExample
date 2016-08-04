@@ -10,15 +10,19 @@ namespace Pattern.Strategy
     {
         static void Main(string[] args)
         {
-            var sum = new Summ();
-            var sub = new Subtraction();
-            var div = new Division();
-            var mul = new Multiplication();
+            Operation operation;
 
-            Method(sum);
-            Method(sub);
-            Method(div);
-            Method(mul);
+            operation = new Summ();
+            Method(operation);
+
+            operation = new Subtraction();
+            Method(operation);
+
+            operation = new Division();
+            Method(operation);
+
+            operation = new Multiplication();
+            Method(operation);
 
             Console.ReadKey();
         }

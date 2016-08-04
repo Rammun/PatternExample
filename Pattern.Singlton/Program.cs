@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,7 +28,6 @@ namespace Pattern.Singlton
     public class Singleton1
     {
         private static Singleton1 instance;
-        private string data = string.Empty;
 
         private Singleton1()
         { }
@@ -48,8 +48,6 @@ namespace Pattern.Singlton
         static Singleton2 instance = null;
         static readonly object block = new object();
 
-        private string data = string.Empty;
-
         private Singleton2()
         {
         }
@@ -65,6 +63,22 @@ namespace Pattern.Singlton
                 return instance;
             }
         }
+
+        public string Data { get; set; }
+    }
+
+    public class Singleton3<T> where T : class
+    {
+        private static readonly Lazy<T> _instance = new Lazy<T>(
+            () => (T)typeof(T).GetConstructor(BindingFlags.Instance | BindingFlags.NonPublic,
+                null, new Type[0], null).Invoke(null));
+        
+        public static T GetInstance { get { return Singleton3<T>._instance.Value; } }
+    }
+
+    public sealed class MySingleton : Singleton3<MySingleton>
+    {
+        private MySingleton() { }
 
         public string Data { get; set; }
     }

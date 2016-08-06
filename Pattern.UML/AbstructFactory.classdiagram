@@ -8,22 +8,11 @@
   leftPicture.Draw()
   rightPicture.Draw()
 }</body>
+      <annotatedElements>
+        <classMoniker Id="04a98c6d-53e5-45db-8ce0-e5c876eabf58" LastKnownName="Sprite" />
+      </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="9cb2da29-01c0-4ea5-a266-31890a445fe6">
-      <profileInstance Id="95291aba-f0b7-4aff-b57b-a6c2b915ec12" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="499f8d9c-3513-4163-af9d-a783507b804b">
-      <profileInstance Id="224b1142-5850-4e0c-9bc9-80598d1dbdc5" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="04a98c6d-53e5-45db-8ce0-e5c876eabf58" name="Sprite" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -324,5 +313,19 @@
   </packagedElements>
   <package Id="2d42f6ee-1f37-41b1-b0f7-d82b371a29df" name="Pattern.UML">
     <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9cb2da29-01c0-4ea5-a266-31890a445fe6">
+        <profileInstance Id="95291aba-f0b7-4aff-b57b-a6c2b915ec12" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="499f8d9c-3513-4163-af9d-a783507b804b">
+        <profileInstance Id="224b1142-5850-4e0c-9bc9-80598d1dbdc5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

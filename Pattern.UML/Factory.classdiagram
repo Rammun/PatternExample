@@ -4,30 +4,25 @@
     <comment Id="6bc0325f-60a0-43a2-a118-290cbbbddcf4">
       <elementDefinition Id="f54f23d1-da7f-46fc-953a-cddbaf4653a2" />
       <body>return new Sqware()</body>
+      <annotatedElements>
+        <classMoniker Id="4c8177d7-7332-42e0-b876-79235d5d64da" LastKnownName="FactorySquare" />
+      </annotatedElements>
     </comment>
     <comment Id="19694166-c8b7-449c-8236-8584565de382">
       <elementDefinition Id="4507da25-ba26-4ef7-99de-d54bcea4f052" />
       <body>return new Circle()</body>
+      <annotatedElements>
+        <classMoniker Id="c98549c5-5fad-4e1b-bee6-ca3aa822b0df" LastKnownName="FactoryCircle" />
+      </annotatedElements>
     </comment>
     <comment Id="100ff3e6-3390-471e-9414-af53516535d3">
       <elementDefinition Id="0885e3de-281c-4964-bca1-70cdbaf8b526" />
       <body>return new Triangle()</body>
+      <annotatedElements>
+        <classMoniker Id="39d99920-6b8f-4d43-a6e5-142d6c7cec74" LastKnownName="FactoryTriangle" />
+      </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="06ef8dc8-681e-4f34-b471-20b65e10225f">
-      <profileInstance Id="8e897f0a-5ab1-498d-b305-4b3cd26a0f18" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6a796596-9d66-402f-a13d-b5d8e6bf4abd">
-      <profileInstance Id="fd3a487e-f67d-42e8-b17e-916456ef26ef" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="02a8c4d6-b7e5-4bf1-8311-5d76f3a4b8c0" name="Factory" isAbstract="true" isLeaf="false" isActiveClass="false">
@@ -226,5 +221,19 @@
   </packagedElements>
   <package Id="26d321e9-5d4a-4bab-a74b-af04adc27323" name="Pattern.UML">
     <elementDefinition Id="c258484c-b251-417e-a87c-8309d7814a75" />
+    <profileInstances>
+      <packageHasProfileInstances Id="06ef8dc8-681e-4f34-b471-20b65e10225f">
+        <profileInstance Id="8e897f0a-5ab1-498d-b305-4b3cd26a0f18" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6a796596-9d66-402f-a13d-b5d8e6bf4abd">
+        <profileInstance Id="fd3a487e-f67d-42e8-b17e-916456ef26ef" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

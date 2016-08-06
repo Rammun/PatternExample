@@ -7,14 +7,32 @@
     <comment
       Id="f54f23d1-da7f-46fc-953a-cddbaf4653a2">
       <body>return new Sqware()</body>
+      <annotatedElements>
+        <classMoniker
+          Id="5fe6645c-5428-4571-a7ee-7036eb3c13dc"
+          LastKnownName="FactorySquare"
+          LastKnownLocation="Pattern.UML.uml" />
+      </annotatedElements>
     </comment>
     <comment
       Id="4507da25-ba26-4ef7-99de-d54bcea4f052">
       <body>return new Circle()</body>
+      <annotatedElements>
+        <classMoniker
+          Id="2aaff993-c43a-4f23-844e-148b63a98210"
+          LastKnownName="FactoryCircle"
+          LastKnownLocation="Pattern.UML.uml" />
+      </annotatedElements>
     </comment>
     <comment
       Id="0885e3de-281c-4964-bca1-70cdbaf8b526">
       <body>return new Triangle()</body>
+      <annotatedElements>
+        <classMoniker
+          Id="39dfc0f0-1e95-4ddf-8276-1ef4e3070a81"
+          LastKnownName="FactoryTriangle"
+          LastKnownLocation="Pattern.UML.uml" />
+      </annotatedElements>
     </comment>
     <comment
       Id="35bd0cd9-5629-4e67-a6ad-1048973908b2">
@@ -23,6 +41,32 @@
   leftPicture.Draw()
   rightPicture.Draw()
 }</body>
+      <annotatedElements>
+        <classMoniker
+          Id="d638ab01-df74-4b62-b7b1-13633d6473c9"
+          LastKnownName="Sprite"
+          LastKnownLocation="Pattern.UML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="daa93bc4-4510-438c-ad6f-85171fd39ca0">
+      <body>Наследование</body>
+    </comment>
+    <comment
+      Id="b5567d1f-34d2-403b-9d35-e1e875ba5a89">
+      <body>Композиция</body>
+    </comment>
+    <comment
+      Id="81d0ebdb-b854-4ce4-83b0-0d55d5845f3f">
+      <body>Наследование</body>
+    </comment>
+    <comment
+      Id="7a8e0437-254f-4d97-8043-53dd1efa5754">
+      <body>Агрегация</body>
+    </comment>
+    <comment
+      Id="850df136-ff69-423e-8351-3db933d7fcff">
+      <body>Используе, знает</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -263,19 +307,73 @@
     <packageHasNamedElement>
       <class
         Id="6476bd09-8326-4ccf-972c-0b9d8d5f858a"
-        name="Program"
+        name="Calculator"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <dependency
-            Id="801c9d34-a4a9-4c21-a4ef-30d77314204e">
+        <targetEnds>
+          <association
+            Id="8f0d35a0-b12c-4aa7-a420-c403f90fc457"
+            isDerived="false"
+            sourceEndRoleName=" "
+            targetEndRoleName=" "
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="e266cd50-46e0-467d-8426-63700614baa5"
               LastKnownName="Operation"
               LastKnownLocation="Pattern.UML.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be426131-2315-4c23-8d78-2874e99e9dca"
+                  name=" "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="33625095-8183-4ce9-9736-a635cbc5a501"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5f6f342f-0823-43e4-b3d7-8c3244c52b3c"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b536ea3-f143-44ae-a1c0-70d8c1a5d662"
+                  name=" "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ebb1c22c-ad61-47f2-9255-fdf527031b59"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6f42ea2f-8533-43d2-abd2-3c698865adc8"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1191,6 +1289,273 @@
       <undefinedType
         Id="ceea55f3-9389-4cce-8a83-21e1f5a04115"
         name="SpritetFactory" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a1bcad2f-429d-4e53-adc2-7e427d70f3dd"
+        name="Interface"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="29b9574b-f983-4416-8ed0-bf1fb56a98ed"
+        name="Enumeration"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="498a627c-66ad-4128-b867-2be21363c02b"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="fca42a6a-747e-4a0c-9e89-fae9eb35ab68"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e6ec9194-f3b1-452e-a560-ac0b8c4226c8"
+              LastKnownName="Class"
+              LastKnownLocation="Pattern.UML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="73bc9a10-ffcc-4fb2-8e8c-01d2bee1e193"
+            isDerived="false"
+            sourceEndRoleName="Class1"
+            targetEndRoleName="Class2"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6b7938af-c3f9-46bf-8140-b42a07394aa3"
+              LastKnownName="Class2"
+              LastKnownLocation="Pattern.UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ca4ed48-2d53-49f2-8013-0b92527935f9"
+                  name="Class1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31b2a1c8-34c4-45e0-a027-2fa02e401410"
+                  name="Class2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9776648d-ce07-472d-9405-50f967a81833"
+            isDerived="false"
+            sourceEndRoleName="Class1"
+            targetEndRoleName="Class5"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="614501ce-7fde-468f-994e-775684a06a01"
+              LastKnownName="Class5"
+              LastKnownLocation="Pattern.UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fdc08c35-dad8-47ee-9919-d901b87838d6"
+                  name="Class1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c9ea8e4-3a05-47e8-a179-c266ec79cd21"
+                  name="Class5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6b7938af-c3f9-46bf-8140-b42a07394aa3"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="58cba2b8-35dd-4583-952d-94fba57bce10">
+            <interfaceMoniker
+              Id="a1bcad2f-429d-4e53-adc2-7e427d70f3dd"
+              LastKnownName="Interface"
+              LastKnownLocation="Pattern.UML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="677a477e-7d83-485a-9983-79acacd59fa7"
+            isDerived="false"
+            sourceEndRoleName="Class2"
+            targetEndRoleName="Class6"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e7ad0163-cc8b-428a-9e78-d593e6871f2b"
+              LastKnownName="Class4"
+              LastKnownLocation="Pattern.UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5380a942-5c00-4acb-9eb8-90db74a44440"
+                  name="Class2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="621947fd-00c8-4ef6-8489-d6f6dbb7a475"
+                  name="Class6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e6ec9194-f3b1-452e-a560-ac0b8c4226c8"
+        name="Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="89e07c5e-b8e6-44e7-b0f4-c88453d9b40a"
+        name="Class4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="75e68d5a-2238-4371-a5ca-5c3e6471ad89"
+        name="Class3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e7ad0163-cc8b-428a-9e78-d593e6871f2b"
+        name="Class4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="98f6e7d8-cc9a-445e-ad33-389a94aa88e4"
+            isDerived="false"
+            sourceEndRoleName="Class6"
+            targetEndRoleName="Class5"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="75e68d5a-2238-4371-a5ca-5c3e6471ad89"
+              LastKnownName="Class3"
+              LastKnownLocation="Pattern.UML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25549384-fe54-4dca-b032-0eea20fbc1ee"
+                  name="Class6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="08cae857-e40b-49f5-a413-557d4a569805"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1153928f-8a8d-478f-938a-c2f1133bf3a8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="348902b6-10ee-4c22-9624-b16b676af1a7"
+                  name="Class5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="614501ce-7fde-468f-994e-775684a06a01"
+        name="Class5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
